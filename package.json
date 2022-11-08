@@ -1,0 +1,38 @@
+{
+  "name": "r3-rapier-branding",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^2.2.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3",
+    "vite-plugin-dts": "^1.7.0"
+  },
+  "peerDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "three": "^0.146.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/r3-rapier-branding.umd.cjs",
+  "module": "./dist/r3-rapier-branding.js",
+  "exports": {
+    ".": {
+      "import": "./dist/r3-rapier-branding.js",
+      "require": "./dist/r3-rapier-branding.umd.cjs"
+    }
+  },
+  "types": "./dist/index.d.ts"
+}
