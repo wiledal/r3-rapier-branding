@@ -1,11 +1,12 @@
 {
   "name": "r3-rapier-branding",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "pub": "rm -rf dist && yarn build"
   },
   "dependencies": {
     "react": "^18.2.0",
